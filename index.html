@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<style>
+		h1 {
+			width: 95%;
+			color: #DC143C;
+			font-family: "Times New Roman", Times, serif;
+			text-align: center;
+			font-size: 600%;
+		}
+		body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 70vh;
+		}
+		.row {
+			 display: flex;
+			 flex-wrap: nowrap;
+		}
+		.col-sm-3 {
+			padding: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.row:nth-child(2)>.col-sm-3 {
+			border-top: .5rem solid #333;
+			border-bottom: .5rem solid #333;
+		}
+		.col-sm-3:nth-child(2) {
+			border-left: .5rem solid #333;
+			border-right: .5rem solid #333;
+		}
+		span {
+			position: absolute;
+			font-size: 400%;
+		}
+		.restart {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 1rem
+		}
+	</style>
+</head>
+<body>
+	<h1></h1>
+	<main>
+		<div class="row">
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+			<div class="col-sm-3 box"></div>
+		</div>
+	</main>
+	<div class="restart">
+		<button class="btn-primary">Restart</button>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
