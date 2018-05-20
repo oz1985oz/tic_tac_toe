@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tic Tac Toe</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<style>
@@ -11,6 +12,11 @@
 			font-family: "Times New Roman", Times, serif;
 			text-align: center;
 			font-size: 600%;
+			position: absolute;
+			top: 0.5rem;
+			background-image: url("conf.png");
+			/*background: rgba(76, 175, 80, 0.3);*/
+			z-index: 2;
 		}
 		body {
 			display: flex;
@@ -20,6 +26,9 @@
 			height: 70vh;
 			background-image: url('rrr.jpg');
 			background-repeat: repeat;
+		}
+		main {
+			margin-top: 8rem;
 		}
 		.row {
 			 display: flex;
@@ -48,7 +57,7 @@
 			display: flex;
 			justify-content: center;
 			width: 100%;
-			margin-top: 1rem
+			margin-top: 2.5rem
 		}
 	</style>
 </head>
