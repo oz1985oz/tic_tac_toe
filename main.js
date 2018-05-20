@@ -1,5 +1,5 @@
-var element = ["✕", "○"];
-var win = ["✕✕✕", "○○○"];
+var element = ["✕", "◯"];
+var win = ["✕✕✕", "◯◯◯"];
 var next = element[0];
 var marked = [];
 var winOp = [];
