@@ -17,6 +17,7 @@
 			background-image: url("conf.png");
 			/*background: rgba(76, 175, 80, 0.3);*/
 			z-index: 2;
+			/*animation: largeAndSmall;*/
 		}
 		body {
 			display: flex;
@@ -52,6 +53,7 @@
 		span {
 			position: absolute;
 			font-size: 400%;
+			animation: fadeIn .8s;
 		}
 		.restart {
 			display: flex;
@@ -59,11 +61,44 @@
 			width: 100%;
 			margin-top: 2.5rem
 		}
+		.larger {
+			animation: largeAndSmall 2s;
+		}
+		@keyframes fadeIn {
+			0% {opacity: 0}
+			100% {opacity: 1}
+		}
+		@keyframes largeAndSmall {
+			0% {
+				opacity: 0;
+				font-size: 400%;
+			}
+			50% {
+				font-size: 100%;
+			}
+			100% {
+				opacity: 1;
+				font-size: 600%;
+			}
+		}
 		@media only screen and (max-width: 600px) {
 		    h1 {
 				font-size: 350%;
 				top: 3rem;
 		    }
+		    @keyframes largeAndSmall {
+			0% {
+				opacity: 0;
+				font-size: 300%;
+			}
+			50% {
+				font-size: 100%;
+			}
+			100% {
+				opacity: 1;
+				font-size: 350%;
+			}
+		}
 		}
 	</style>
 </head>

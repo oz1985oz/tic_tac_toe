@@ -41,9 +41,11 @@ function theWinner (e) {
 		if (value == win[0]) {
 			console.log(element[0] + ' WON! 🏆');
 			$('h1').text(element[0] + ' WON! 🏆');
+			$('h1').addClass("larger");
 		} else if (value == win[1]) {
 			console.log(element[1] + ' WON! 🏆');
 			$('h1').text(element[1] + ' WON! 🏆');
+			$('h1').addClass("larger");
 		}
 	})
 }
